@@ -30,4 +30,10 @@
 .user-details {
   text-align: center;
   margin: 5px auto;
+  flex-wrap: wrap;
+}
+
+.user-item {
+  display:flex;
+  flex-basis: 33.333%;
 }

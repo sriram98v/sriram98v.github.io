@@ -1,21 +1,9 @@
 {% macro about() %}
 <div class="user-details">
-  <h1> My Expertise </h1>
+  <h1> About me </h1>
   <p> {{ config.extra.user_description }} </p>
 </div>
 {% endmacro about %}
-
-{% macro skills() %}
- <div class="user-details">
-  <h1> Skills </h1>
-</div>
-  <div class="user">
-    <div class="tech">
-      <h2>Tools</h2>
-      <i class="devicon-git-plain"></i>
-    </div>
-</div>
-{% endmacro skills %}
 
 {% macro experience() %}
 <div class="user-details">
@@ -23,24 +11,57 @@
 </div>
 <div class="user">
   <div class="tech">
+    <h2>Work Experience</h1>
+  </div>
+  <div class="tech">
+    <h2>Affiliations</h1>
   </div>
 </div>
 {% endmacro experience %}
 
-{% macro publications() %}
+{% macro skills() %}
 <div class="user-details">
-  <h1> Publications </h1>
+  <h1> Skills </h1>
 </div>
 <div class="user">
   <div class="tech">
+    <h2>Tools/Languages</h2>
+    <div class="user-item"><i class="devicon-git-plain"></i></div>
+    <div class="user-item"><i class="devicon-python-plain"></i></div>
+    <div class="user-item"><i class="devicon-rust-plain"></i></div>
+    <div class="user-item"><i class="devicon-matlab-plain"></i></div>
+    <div class="user-item"><i class="devicon-tensorflow-original"></i></div>
+    <div class="user-item"><i class="devicon-pytorch-original"></i></div>
+    <div class="user-item"><i class="devicon-latex-original"></i></div>
+    <div class="user-item"><i class="devicon-linux-plain"></i></div>
+  </div>
+  <div class="tech">
+    <h2>Certifications</h2>
   </div>
 </div>
-{% endmacro publications %}
+{% endmacro skills %}
+
+{% macro achievements() %}
+<div class="user-details">
+  <h1> Achievements </h1>
+</div>
+<div class="user">
+    <div class="tech">
+      <h2>Fellowships and Awards</h2>
+      <i class="devicon-git-plain"></i>
+    </div>
+    <div class="tech">
+      <h2>Publications</h2>
+      <i class="devicon-git-plain"></i>
+    </div>
+
+</div>
+{% endmacro achievements %}
 
 
 {% macro projects() %}
 <div class="user-details">
-  <h1> Featured Projects </h1>
+  <h1> Projects </h1>
 </div>
 <div class="user-projects">
   <div class="images-right">
