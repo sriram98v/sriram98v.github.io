@@ -1,0 +1,27 @@
+# The URL the site will be built for
+base_url = "https://sriram98v.github.io"
+
+title = "Personal Webpage"
+description = "Personal webpage for Sriram Vijendran"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+# The default language; used in feeds.
+default_language = "en"
+
+[extra]
+# User settings
+username = "Sriram Vijendran"
+user_description = "A Machine Learning enthusiast with a background in Electronics and Communication Engineering. Looking to explore the Application of Machine Learning in Genomic Analysis and String data, applications of Gaussian Processes in image data. Currently a Ph.D. student at Iowa State University."
+user_title = "Researcher"
+email = "vijendran.sriram@gmail.com"
+github_username =  "sriram98v"
+

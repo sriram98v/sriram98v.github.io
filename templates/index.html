@@ -1,0 +1,40 @@
+{% import "macros.html" as macros %}
+{% import "content.html" as content %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+  {{ macros::head() }}
+
+  <body>
+
+      {{ macros::header() }}
+
+      <section id="about">
+        {{ content::about() }}
+      </section>
+
+      <section id="skills">
+        {{ content::skills() }}
+      </section>
+
+      <section id="experience">
+        {{ content::experience() }}
+      </section>
+
+      <section id="projects">
+        {{ content::projects() }}
+      </section>
+
+      <section id="publications">
+        {{ content::publications() }}
+      </section>
+
+      {% block content %}
+      <p></p>
+      {% endblock content %}
+
+
+      {{ macros::footer() }}
+
+  </body>
