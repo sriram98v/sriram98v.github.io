@@ -89,7 +89,7 @@
     <ul>
       {% set certs = load_data(path="content/certifications.json") %}
       {% for cert in certs.certifications %}
-        <li><i class="fa-solid fa-certificate"></i> <a href="{{ cert.url }}">{{ cert.title }}</a></li>
+        <li><i class="fa-solid fa-link"></i> <a href="{{ cert.url }}">{{ cert.title }}</a></li>
       {% endfor %}
     </ul>
   </div>
