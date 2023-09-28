@@ -9,7 +9,7 @@
   <meta name="description" content="{% if page.description %}{{ page.description | striptags | trim | truncate(length=160) }}{% else %}{{ config.description }}{% endif %}">
 
   <link rel="stylesheet" href="{{ config.base_url ~ "/main.css" }}">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <script src="https://kit.fontawesome.com/5ad2c9e127.js" crossorigin="anonymous"></script>
 </head>
 {% endmacro head %}
@@ -17,7 +17,6 @@
 {% macro footer() %}
 <footer class="footer">
     <p>&copy; {{ config.extra.username }}</p>
-    <p>Ported to Zola with <span class="love">❤</span> by <a href="https://github.com/svavs">Silvano Sallese</a> (original by <a href="https://github.com/nrandecker">Nathan Randecker</a>)</p>
 </footer>
 <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="{{ config.base_url ~ "/js/sweet-scroll.min.js" }}"></script>
@@ -32,12 +31,18 @@
         <span class="site-description">{{ config.extra.user_title | linebreaksbr | safe }}</span>
       </h1>
       <div class="header-icons">
-        <a aria-label="Send email" href="#"><i class="icon fa fa-envelope"></i></a>
-        <a aria-label="My Github" target="_blank" href="#"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
-        <a aria-label="My CV" target="_blank" href="#"><i class="icon fa-solid fa-file"></i></a>
+        <a aria-label="Send email" href="mailto:{{ config.extra.email }}"><i class="icon fa fa-envelope"></i></a>
+        <a aria-label="My Github" href="https://github.com/sriram98v"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+        <a aria-label="My Linkedin" href="https://www.linkedin.com/in/sriram-vijendran-02595512a/"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
+        <a aria-label="My Google Scholar" href="https://www.linkedin.com/in/sriram-vijendran-02595512a/"><i class="icon fa fa-google" aria-hidden="true"></i></a>
+        <a aria-label="My CV" href="{{ config.base_url ~ "/docs/Sriram_Vijendran_cv.pdf" }}"><i class="icon fa-solid fa-file"></i></a>
       </div>
       <div class="header-links">
         <a class="link" href="#about" data-scroll>About Me</a>
+        <a class="link" href="#skills" data-scroll>Skills</a>
+        <a class="link" href="#exp" data-scroll>Experience</a>
+        <a class="link" href="#achievements" data-scroll>Achievements</a>
+        <a class="link" href="#publications" data-scroll>Publications</a>
         <a class="link" href="#projects" data-scroll>Projects</a>
       </div>
   </div>

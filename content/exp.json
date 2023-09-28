@@ -1,6 +1,12 @@
 {
     "wexps": [
         {
+            "duration": "August 2023 - August 2024",
+            "company": "USDA-ARS",
+            "url": "https://www.ars.usda.gov/midwest-area/ames/nadc/",
+            "position": "Research Intern"
+        },
+        {
             "duration": "December 2018 - June 2020",
             "company": "Robert Bosch Center for Data Science and Artificial Intelligence",
             "url": "https://rbcdsai.iitm.ac.in/",
@@ -33,9 +39,23 @@
     ],
     "affs": [
         {
-            "duration": "Feburary 2018 - March 2020",
+            "company": "Computational Biology Research Team @ Iowa State University",
+            "url": "https://compbioteam.github.io/",
+            "position": "Ph.D. Student"
+        },
+        {
+            "company": "Center of Science",
+            "url": "https://cos.io/",
+            "position": "Ambassador"
+        },
+        {
+            "company": "FluCrew",
+            "url": "https://anderson-lab.com/people/",
+            "position": "Researcher"
+        },
+        {
             "company": "Next Tech Labs",
-            "url": "",
+            "url": "https://srmap.edu.in/next_tech_lab/",
             "position": "Syndicate of Minsky Labs"
         }
     ]

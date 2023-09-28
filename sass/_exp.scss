@@ -1,39 +1,52 @@
 #exp {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 960px;
-    @media only screen and (min-width: $cut) {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  @media only screen and (min-width: $cut) {
       width: 80%;
+  }
+}
+
+.tech {
+  h3 {
+    margin: 0;
+  }
+  h5 {
+      font-size: 1rem;
+      color: black;
+      margin: 0;
+    }
+  h6 {
+      font-size: 0.75rem;
+      color: gray;
+      margin: 0;
+    }
+  ul{
+      margin: 0;
+  }
+  li {
+    color: $main;
+    font-size: 1.1rem;
+    list-style-type: none;
+    text-decoration: none;  
+    margin-bottom: 0.1rem;
+  }
+  p {
+    margin-right: 5px;
+    font-size: 0.75rem;
+    color: gray;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    &:hover {
+      color: $purple;
+      transition: color 0.3s ease-in,
+                  background-color 0.3s ease-in,
+                  border-color 0.3s ease-in;
     }
   }
-  
-  .tech {
-    margin: 10px;
-  }
-  
-  .user {
-    text-align: center;
-    font-size: 60px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    p {
-      font-size: 16px;
-    }
-    @media only screen and (min-width: $cut) {
-      flex-wrap: nowrap;
-      font-size: 75px;
-    }
-  }
-  
-  .user-details {
-    text-align: center;
-    margin: 5px auto;
-    flex-wrap: wrap;
-  }
-  
-  .user-item {
-    display:flex;
-    flex-basis: 33.333%;
-  }
+}

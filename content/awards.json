@@ -20,20 +20,17 @@
         }
     ],
     "fellowships": [
+        {
+            "title": "Datapalooza",
+            "url": "https://imageomics.osu.edu/",
+            "org": "Imageomics",
+            "year": "2023"
+        },
         {	
-            "title": "Research Day",
-            "org": "SRMIST",
-            "year": "2019"
-        },
-        {
-            "title": "Interdepartment Physics Project Competition",
-            "org": "SRMIST",
-            "year": "2016"
-        },
-        {
-            "title": "Robotics Competition",
-            "org": "Robotryst",
-            "year": "2014"
+            "title": "Open Science Fellowship",
+            "url": "https://www.cos.io/blog/fellowship-factor-cultivating-community-in-influenza-research-and-beyond",
+            "org": "COS",
+            "year": "2022"
         }
     ]
 

@@ -1,0 +1,12 @@
+{
+    "projs": [
+      {
+        "title": "SmartHisto",
+        "photo_url": "https://github.com/sriram98v/histology_segmentation/blob/main/proj_im.png?raw=true",
+        "github": "https://github.com/sriram98v/histology_segmentation/",
+        "about": "SmartHisto is a software tool to train Deep bayesian Neural Networks in an Active learning setting, to optimize the labelling budget of your training dataset"
+      }
+    ]
+  }
+  
+  

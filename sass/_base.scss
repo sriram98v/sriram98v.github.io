@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -44,6 +50,4 @@ sup, sub {
 li{
     font-size: 1rem;
     text-align: left;
-    list-style-type: none;
-    text-decoration: none;
 }

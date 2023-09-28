@@ -1,22 +1,13 @@
-#skills {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  max-width: 960px;
-  margin: 0 auto;
-  @media only screen and (min-width: $cut) {
-      width: 80%;
-  }
-}
-
-.user-details {
-  text-align: center;
-  margin: 5px auto;
-  flex-wrap: wrap;
-}
-
-.h1 {
-  margin: 0;
+#achievements {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    @media only screen and (min-width: $cut) {
+        width: 80%;
+    }
 }
 
 .tech {
@@ -33,16 +24,13 @@
       }
     ul{
         margin: 0;
-        padding-left: 3rem;
     }
     li {
-      i{
-        font-size: 0.75rem;
-      };
       color: $main;
-      font-size: 1rem;
+      font-size: 1.1rem;
       list-style-type: none;
-      text-decoration: none;  
+      text-decoration: none;
+      margin-bottom: 0.1rem;
     }
     p {
       margin-right: 5px;
@@ -52,7 +40,6 @@
     a {
       text-decoration: none;
       color: black;
-      font-size: 1rem;
       &:hover {
         color: $purple;
         transition: color 0.3s ease-in,

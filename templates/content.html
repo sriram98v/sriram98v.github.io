@@ -5,6 +5,38 @@
 </div>
 {% endmacro about %}
 
+{% macro achievements() %}
+<div class="user-details">
+  <h1> Achievements </h1>
+</div>
+<div class="user">
+    <div class="tech">
+      <h2>Awards</h2>
+        <ul>
+          {% set aw_fel = load_data(path="content/awards.json") %}
+          {% for award in aw_fel.awards %}
+            <li>
+              <h4>{{ award.title }}</h4>
+              <h5>{{ award.org }} | {{ award.year }} | {{ award.pos }}</h5>
+            </li>
+          {% endfor %}
+        </ul>
+    </div>
+    <div class="tech">
+      <h2>Fellowships</h2>
+        <ul>
+          {% for award in aw_fel.fellowships %}
+            <li>
+              <h4><a href="{{ award.url }}">{{ award.title }}</a></h4>
+              <h5>{{ award.org }} | {{ award.year }}</h5>
+            </li>
+          {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endmacro achievements %}
+
+
 {% macro experience() %}
 <div class="user-details">
   <h1> Experience </h1>
@@ -12,16 +44,26 @@
 <div class="user">
   <div class="tech">
     {% set exp = load_data(path="content/exp.json") %}
-    <h2>Work Experience</h1>
+    <h2>Work Experience</h2>
+    <ul>
     {% for wexp in exp.wexps %}
-    <li><a href="{{ wexp.url }}">{{ wexp.company }}, {{ wexp.position }}</a></li>
+    <li>
+      <h5><a href="{{ wexp.url }}">{{ wexp.company }}</a></h5>
+      <h6>{{ wexp.position }}</h6>
+    </li>
     {% endfor %}
+    </ul>
   </div>
   <div class="tech">
-    <h2>Affiliations</h1>
+    <h2>Affiliations</h2>
+    <ul>
     {% for aff in exp.affs %}
-    <li><a href="{{ aff.url }}">{{ aff.company }}, {{ aff.position }}</a></li>
+    <li>
+      <h5><a href="{{ aff.url }}">{{ aff.company }}</a></h5>
+      <h6>{{ aff.position }}</h6>
+    </li>
     {% endfor %}
+    </ul>
   </div>
 </div>
 {% endmacro experience %}
@@ -45,52 +87,34 @@
   <div class="tech">
     <h2>Certifications</h2>
     <ul>
-    {% set certs = load_data(path="content/certifications.json") %}
-    {% for cert in certs.certifications %}
-    <li><i class="fa-solid fa-certificate"></i><a href="{{ cert.url }}">{{ cert.title }}</a></li>
-    {% endfor %}
+      {% set certs = load_data(path="content/certifications.json") %}
+      {% for cert in certs.certifications %}
+        <li><i class="fa-solid fa-certificate"></i> <a href="{{ cert.url }}">{{ cert.title }}</a></li>
+      {% endfor %}
     </ul>
   </div>
 </div>
 {% endmacro skills %}
 
-{% macro achievements() %}
-<div class="user-details">
-  <h1> Achievements </h1>
-</div>
-<div class="user">
-    <div class="tech">
-      <h2>Awards</h2>
-          {% set aw_fel = load_data(path="content/awards.json") %}
-          {% for award in aw_fel.awards %}
-          <li>{{ award.title }}|{{ award.org }}|{{ award.year }}|{{ award.pos }}</li>
-          {% endfor %}
-    </div>
-    <div class="tech">
-      <h2>Fellowships</h2>
-          {% for award in aw_fel.fellowships %}
-          <li>{{ award.title }}|{{ award.org }}|{{ award.year }}</li>
-          {% endfor %}
-    </div>
-</div>
-{% endmacro achievements %}
-
 {% macro publications() %}
 <div class="user-details">
-  <h1> Publications </h1>
+  <h1> Recent Publications </h1>
 </div>
-<div class="user">
-    {% set pubs = load_data(path="content/pubs.json") %}
-    {% for pub in pubs.pubs %}
-    <li>
-      <h4>{{ pub.title }}|{{ pub.year }}</h4>
-      <h5>
+{% set pubs = load_data(path="content/pubs.json") %}
+{% for pub in pubs.pubs %}
+  <div class="user-pubs">
+    <div class="pub-contents">
+      <h3><a href="{{ pub.link }}">{{ pub.title }}</a></h3>
+      <h4>{{ pub.booktitle }}</h4>
+      <p>
         {% for auth in pub.author %}
-        {{ auth.name }};
+          {{ auth.name }};
         {% endfor %}
-      </h5>
-    </li>
-    {% endfor %}
+      </p>
+    </div>
+  </div>
+{% endfor %}
+<a class="pub-link" href="https://scholar.google.com/citations?hl=en&user=Ph3THgYAAAAJ">All Publications</a>
 {% endmacro publications %}
 
 
@@ -99,31 +123,19 @@
 <div class="user-details">
   <h1> Projects </h1>
 </div>
-<div class="user-projects">
-  <div class="images-right">
-    <img alt="mountains" src="{{ config.base_url ~ "/img/mountains.jpg" }}" />
+{% set projs = load_data(path="content/projs.json") %}
+{% for proj in projs.projs %}
+  <div class="user-projects">
+    <div class="images-right">
+      <img alt="project" src="{{ proj.photo_url }}" />
+    </div>
+    <div class="contents">
+      <h3>{{ proj.title }}</h3>
+      <p>{{ proj.about }}</p>
+      <a class="project-link" href="{{ proj.github }}">GitHub</a>
+    </div>
   </div>
-  <div class="contents">
-    <h3> Project Title </h3>
-    <ul>
-      <li> Featured Skills</li>
-    </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
-  </div>
-</div>
-<div class="user-projects">
-  <div class="images-left">
-    <img alt="mountains" src="{{ config.base_url ~ "/img/skate.jpg" }}" />
-  </div>
-  <div class="contents-right">
-    <h3> Project Title </h3>
-    <ul>
-      <li> Featured Skills</li>
-    </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
-  </div>
-</div>
+{% endfor %}
+<a class="project-link" href="https://github.com/sriram98v">All Projects</a>
 {% endmacro projects %}
 
