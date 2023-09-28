@@ -1,0 +1,40 @@
+{
+    "awards": [
+        {	
+            "title": "Research Day",
+            "org": "SRMIST",
+            "year": "2019",
+            "pos": "Silver Medal"
+        },
+        {
+            "title": "Interdepartment Physics Project Competition",
+            "org": "SRMIST",
+            "year": "2016",
+            "pos": "First Place"
+        },
+        {
+            "title": "Robotics Competition",
+            "org": "Robotryst",
+            "year": "2014",
+            "pos": "Third Place"
+        }
+    ],
+    "fellowships": [
+        {	
+            "title": "Research Day",
+            "org": "SRMIST",
+            "year": "2019"
+        },
+        {
+            "title": "Interdepartment Physics Project Competition",
+            "org": "SRMIST",
+            "year": "2016"
+        },
+        {
+            "title": "Robotics Competition",
+            "org": "Robotryst",
+            "year": "2014"
+        }
+    ]
+
+}

@@ -30,8 +30,7 @@ h4 {
     font-size: 1rem;
 }
 ul, ol {
-    margin: 1em 0;
-    padding-left: 40px;
+    padding-left: 3rem;
 }
 p, figure {
     margin: 1em 0;
@@ -41,4 +40,10 @@ a img {
 }
 sup, sub {
     line-height: 0;
+}
+li{
+    font-size: 1rem;
+    text-align: left;
+    list-style-type: none;
+    text-decoration: none;
 }

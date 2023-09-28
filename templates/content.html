@@ -11,10 +11,17 @@
 </div>
 <div class="user">
   <div class="tech">
+    {% set exp = load_data(path="content/exp.json") %}
     <h2>Work Experience</h1>
+    {% for wexp in exp.wexps %}
+    <li><a href="{{ wexp.url }}">{{ wexp.company }}, {{ wexp.position }}</a></li>
+    {% endfor %}
   </div>
   <div class="tech">
     <h2>Affiliations</h1>
+    {% for aff in exp.affs %}
+    <li><a href="{{ aff.url }}">{{ aff.company }}, {{ aff.position }}</a></li>
+    {% endfor %}
   </div>
 </div>
 {% endmacro experience %}
@@ -26,17 +33,23 @@
 <div class="user">
   <div class="tech">
     <h2>Tools/Languages</h2>
-    <div class="user-item"><i class="devicon-git-plain"></i></div>
-    <div class="user-item"><i class="devicon-python-plain"></i></div>
-    <div class="user-item"><i class="devicon-rust-plain"></i></div>
-    <div class="user-item"><i class="devicon-matlab-plain"></i></div>
-    <div class="user-item"><i class="devicon-tensorflow-original"></i></div>
-    <div class="user-item"><i class="devicon-pytorch-original"></i></div>
-    <div class="user-item"><i class="devicon-latex-original"></i></div>
-    <div class="user-item"><i class="devicon-linux-plain"></i></div>
+    <i class="devicon-git-plain"></i>
+    <i class="devicon-python-plain"></i>
+    <i class="devicon-rust-plain"></i>
+    <i class="devicon-matlab-plain"></i>
+    <i class="devicon-tensorflow-original"></i>
+    <i class="devicon-pytorch-original"></i>
+    <i class="devicon-latex-original"></i>
+    <i class="devicon-linux-plain"></i>
   </div>
   <div class="tech">
     <h2>Certifications</h2>
+    <ul>
+    {% set certs = load_data(path="content/certifications.json") %}
+    {% for cert in certs.certifications %}
+    <li><i class="fa-solid fa-certificate"></i><a href="{{ cert.url }}">{{ cert.title }}</a></li>
+    {% endfor %}
+    </ul>
   </div>
 </div>
 {% endmacro skills %}
@@ -47,16 +60,39 @@
 </div>
 <div class="user">
     <div class="tech">
-      <h2>Fellowships and Awards</h2>
-      <i class="devicon-git-plain"></i>
+      <h2>Awards</h2>
+          {% set aw_fel = load_data(path="content/awards.json") %}
+          {% for award in aw_fel.awards %}
+          <li>{{ award.title }}|{{ award.org }}|{{ award.year }}|{{ award.pos }}</li>
+          {% endfor %}
     </div>
     <div class="tech">
-      <h2>Publications</h2>
-      <i class="devicon-git-plain"></i>
+      <h2>Fellowships</h2>
+          {% for award in aw_fel.fellowships %}
+          <li>{{ award.title }}|{{ award.org }}|{{ award.year }}</li>
+          {% endfor %}
     </div>
-
 </div>
 {% endmacro achievements %}
+
+{% macro publications() %}
+<div class="user-details">
+  <h1> Publications </h1>
+</div>
+<div class="user">
+    {% set pubs = load_data(path="content/pubs.json") %}
+    {% for pub in pubs.pubs %}
+    <li>
+      <h4>{{ pub.title }}|{{ pub.year }}</h4>
+      <h5>
+        {% for auth in pub.author %}
+        {{ auth.name }};
+        {% endfor %}
+      </h5>
+    </li>
+    {% endfor %}
+{% endmacro publications %}
+
 
 
 {% macro projects() %}

@@ -1,0 +1,40 @@
+{
+    "certifications": [
+        {
+            "url": "https://www.coursera.org/account/accomplishments/records/LTVXL8Y3G7RT",
+            "title": "Introduction to Programming with MATLAB"
+        },
+        {
+            "url": "https://www.coursera.org/account/accomplishments/records/E4H7VXATC3SA",
+            "title": "Structuring Machine Learning Projects"
+        },
+        {
+            "url": "https://www.coursera.org/account/accomplishments/records/DMUFMW4DZW9N",
+            "title": "Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization"
+        },
+        {
+            "url": "https://www.coursera.org/account/accomplishments/records/BY27A2RWRLNZ",
+            "title": "Neural Networks and Deep Learning"
+        },
+        {
+            "url": "https://www.coursera.org/account/accomplishments/records/EH9QETENF58K",
+            "title": "Using Python to Access"
+        },
+        {
+            "url": "https://www.coursera.org/account/accomplishments/records/UNJ36FZHLLLW",
+            "title": "Python Data Structures"
+        },
+        {
+            "url": "https://www.coursera.org/account/accomplishments/records/PFS6NZ8RM8J5",
+            "title": "Programming for Everybody (Getting Started with Python)"
+        },
+        {
+            "url": "docs/NUS.pdf",
+            "title": "NUS Certificate"
+        },
+        {
+            "url": "docs/RL.pdf",
+            "title": "Reinforcement Learning"
+        }
+    ]
+}

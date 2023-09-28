@@ -1,0 +1,42 @@
+{
+    "wexps": [
+        {
+            "duration": "December 2018 - June 2020",
+            "company": "Robert Bosch Center for Data Science and Artificial Intelligence",
+            "url": "https://rbcdsai.iitm.ac.in/",
+            "position": "Research Intern"
+        },
+        {
+            "duration": "May 2020 - November 2020",
+            "company": "AmberTAG",
+            "url": "",
+            "position": "Consultant"
+        },
+        {	
+            "duration": "September 2018 - December 2018",
+            "company": "AmberTag Analytics",
+            "url": "",
+            "position": "ML Engineer"
+        },
+        {
+            "duration": "August 2018",
+            "company": "IIT, Delhi",
+            "url": "",
+            "position": "Research Intern"
+        },
+        {
+            "duration": "June 2018",
+            "company": "National University of Singapore",
+            "url": "",
+            "position": "Research Intern"
+        }
+    ],
+    "affs": [
+        {
+            "duration": "Feburary 2018 - March 2020",
+            "company": "Next Tech Labs",
+            "url": "",
+            "position": "Syndicate of Minsky Labs"
+        }
+    ]
+}
