@@ -15,25 +15,25 @@
         {
             "duration": "May 2020 - November 2020",
             "company": "AmberTAG",
-            "url": "",
+            "url": "https://www.ambertag.com/",
             "position": "Consultant"
         },
         {	
             "duration": "September 2018 - December 2018",
             "company": "AmberTag Analytics",
-            "url": "",
+            "url": "https://www.ambertag.com/",
             "position": "ML Engineer"
         },
         {
             "duration": "August 2018",
             "company": "IIT, Delhi",
-            "url": "",
+            "url": "https://tapankgandhi.com/research/",
             "position": "Research Intern"
         },
         {
             "duration": "June 2018",
             "company": "National University of Singapore",
-            "url": "",
+            "url": "https://www.comp.nus.edu.sg/",
             "position": "Research Intern"
         }
     ],
