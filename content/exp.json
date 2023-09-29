@@ -2,7 +2,7 @@
     "wexps": [
         {
             "duration": "August 2023 - August 2024",
-            "company": "USDA-ARS",
+            "company": "ORISE-USDA-ARS",
             "url": "https://www.ars.usda.gov/midwest-area/ames/nadc/",
             "position": "Research Intern"
         },
@@ -44,14 +44,14 @@
             "position": "Ph.D. Student"
         },
         {
-            "company": "Center of Science",
-            "url": "https://cos.io/",
-            "position": "Ambassador"
-        },
-        {
             "company": "FluCrew",
             "url": "https://anderson-lab.com/people/",
             "position": "Researcher"
+        },
+        {
+            "company": "Center of Science",
+            "url": "https://cos.io/",
+            "position": "Ambassador"
         },
         {
             "company": "Next Tech Labs",
