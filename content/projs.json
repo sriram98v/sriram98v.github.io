@@ -2,7 +2,7 @@
     "projs": [
       {
         "title": "KGST",
-        "photo_url": "",
+        "photo_url": "https://github.com/sriram98v/generalized_suffix_tree/blob/main/proj_im.png?raw=true",
         "github": "https://github.com/sriram98v/generalized_suffix_tree",
         "about": "A Rust library containing the implementation of a K-Truncated Generalized Suffix Tree using Ukkonen's Algorithm, along with a CLI tool to quickly build and serialize KGST's."
       },
