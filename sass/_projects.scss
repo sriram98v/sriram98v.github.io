@@ -11,6 +11,8 @@
 }
 
 .user-projects {
+  display: flex;
+  align-items: stretch;
   margin: 20px auto;
   img {
     max-width: 100%;
@@ -30,6 +32,7 @@
 }
 
 .contents {
+  display: block;
   @media only screen and (min-width: $cut) {
     margin-left: 0;
     width: 48%;
