@@ -1,5 +1,12 @@
 {% import "macros.html" as macros %}
 {% import "content.html" as content %}
+{% import "projs.html" as projs %}
+{% import "pubs.html" as pubs %}
+{% import "skills.html" as skills %}
+{% import "exp.html" as exp %}
+{% import "about.html" as about %}
+{% import "acheivements.html" as acheivements %}
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,33 +18,28 @@
       {{ macros::header() }}
 
       <section id="about">
-        {{ content::about() }}
+        {{ about::about() }}
       </section>
 
       <section id="publications">
-        {{ content::publications() }}
+        {{ pubs::publications() }}
       </section>
 
       <section id="projects">
-        {{ content::projects() }}
+        {{ projs::projects() }}
       </section>
 
       <section id="skills">
-        {{ content::skills() }}
+        {{ skills::skills() }}
       </section>
 
       <section id="exp">
-        {{ content::experience() }}
+        {{ exp::experience() }}
       </section>
 
       <section id="achievements">
-        {{ content::achievements() }}
+        {{ acheivements::achievements() }}
       </section>
-
-      {% block content %}
-      <p></p>
-      {% endblock content %}
-
 
       {{ macros::footer() }}
 

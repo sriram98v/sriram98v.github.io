@@ -1,0 +1,30 @@
+{% macro achievements() %}
+<div class="user-details">
+  <h1> Achievements </h1>
+</div>
+<div class="user">
+    <div class="tech">
+      <h2>Awards</h2>
+        <ul>
+          {% set aw_fel = load_data(path="content/awards.json") %}
+          {% for award in aw_fel.awards %}
+            <li>
+              <h4>{{ award.title }}</h4>
+              <h5>{{ award.org }} | {{ award.year }} | {{ award.pos }}</h5>
+            </li>
+          {% endfor %}
+        </ul>
+    </div>
+    <div class="tech">
+      <h2>Fellowships</h2>
+        <ul>
+          {% for award in aw_fel.fellowships %}
+            <li>
+              <h4><i class="fa-solid fa-link"></i> <a href="{{ award.url }}">{{ award.title }}</a></h4>
+              <h5>{{ award.org }} | {{ award.year }}</h5>
+            </li>
+          {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endmacro achievements %}

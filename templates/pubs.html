@@ -1,0 +1,20 @@
+{% macro publications() %}
+<div class="user-details">
+  <h1> Recent Publications </h1>
+</div>
+{% set pubs = load_data(path="content/pubs.json") %}
+{% for pub in pubs.pubs %}
+  <div class="user-pubs">
+    <div class="pub-contents">
+      <h3><i class="fa-solid fa-book"></i> <a href="{{ pub.link }}">{{ pub.title }}</a></h3>
+      <h4>{{ pub.booktitle }}</h4>
+      <p>
+        {% for auth in pub.author %}
+          {{ auth.name }};
+        {% endfor %}
+      </p>
+    </div>
+  </div>
+{% endfor %}
+<a class="pub-link" href="https://scholar.google.com/citations?hl=en&user=Ph3THgYAAAAJ">All Publications</a>
+{% endmacro publications %}

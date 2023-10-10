@@ -1,0 +1,30 @@
+{% macro experience() %}
+<div class="user-details">
+  <h1> Experience </h1>
+</div>
+<div class="user">
+  <div class="tech">
+    {% set exp = load_data(path="content/exp.json") %}
+    <h2>Work Experience</h2>
+    <ul>
+    {% for wexp in exp.wexps %}
+    <li>
+      <h5><i class="fa-solid fa-link"></i> <a href="{{ wexp.url }}">{{ wexp.company }}</a></h5>
+      <h6>{{ wexp.position }}, {{ wexp.duration }}</h6>
+    </li>
+    {% endfor %}
+    </ul>
+  </div>
+  <div class="tech">
+    <h2>Affiliations</h2>
+    <ul>
+    {% for aff in exp.affs %}
+    <li>
+      <h5><i class="fa-solid fa-link"></i> <a href="{{ aff.url }}">{{ aff.company }}</a></h5>
+      <h6>{{ aff.position }}</h6>
+    </li>
+    {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endmacro experience %}

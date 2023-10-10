@@ -1,0 +1,27 @@
+{% macro skills() %}
+<div class="user-details">
+  <h1> Skills </h1>
+</div>
+<div class="user">
+  <div class="tech">
+    <h2>Tools/Languages</h2>
+    <i class="devicon-git-plain"></i>
+    <i class="devicon-python-plain"></i>
+    <i class="devicon-rust-plain"></i>
+    <i class="devicon-matlab-plain"></i>
+    <i class="devicon-tensorflow-original"></i>
+    <i class="devicon-pytorch-original"></i>
+    <i class="devicon-latex-original"></i>
+    <i class="devicon-linux-plain"></i>
+  </div>
+  <div class="tech">
+    <h2>Certifications</h2>
+    <ul>
+      {% set certs = load_data(path="content/certifications.json") %}
+      {% for cert in certs.certifications %}
+        <li><i class="fa-solid fa-link"></i> <a href="{{ cert.url }}">{{ cert.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endmacro skills %}
