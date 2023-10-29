@@ -3,18 +3,6 @@
 <div class="user-details">
   <h1> Projects </h1>
 </div>
-{% set projs = load_data(path="content/projs.json") %}
-{% for proj in projs.projs %}
-  <div class="user-projects">
-    <div class="images-right">
-      <img alt="project" src="{{ proj.photo_url }}" />
-    </div>
-    <div class="contents">
-      <h3>{{ proj.title }}</h3>
-      <p>{{ proj.about }}</p>
-      <a class="project-link" href="{{ proj.github }}">GitHub</a>
-    </div>
-  </div>
-{% endfor %}
-<a class="project-link" href="https://github.com/sriram98v">All Projects</a>
+<section class="github-repo-cards" data-user="sriram98v" data-background="white"></section>
+<a class="project-link" href="{{ config.extra.git_url ~ config.extra.github_id }}">All Projects</a>
 {% endmacro projects %}

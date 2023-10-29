@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="{{ config.base_url ~ "/main.css" }}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <script src="https://kit.fontawesome.com/5ad2c9e127.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/github-repo-cards@1.0.10/app.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-repo-cards@1.0.10/style.css">
 </head>
 {% endmacro head %}
 
@@ -32,8 +34,8 @@
       </h1>
       <div class="header-icons">
         <a aria-label="Send email" href="mailto:{{ config.extra.email }}"><i class="icon fa fa-envelope"></i></a>
-        <a aria-label="My Github" href="https://github.com/sriram98v"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
-        <a aria-label="My Linkedin" href="https://www.linkedin.com/in/sriram-vijendran-02595512a/"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
+        <a aria-label="My Github" href="{{ config.extra.git_url ~ config.extra.github_id }}"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+        <a aria-label="My Linkedin" href="{{ "https://www.linkedin.com/in/" ~ config.extra.linkedin_id }}"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
         <a aria-label="My Google Scholar" href="https://scholar.google.com/citations?user=Ph3THgYAAAAJ&hl=en"><i class="icon fa fa-google" aria-hidden="true"></i></a>
         <a aria-label="My CV" href="{{ config.base_url ~ "/docs/Academic_CV.pdf" }}"><i class="icon fa-solid fa-file"></i></a>
       </div>
