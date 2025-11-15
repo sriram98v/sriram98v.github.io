@@ -7,7 +7,7 @@
   <div class="user-pubs">
     <div class="pub-contents">
       <h3><i class="fa-solid fa-book"></i> <a href="{{ pub.link }}">{{ pub.title }}</a></h3>
-      <h4>{{ pub.journal }}</h4>
+      <h4>{{ pub.journal }} - {{ pub.year  }}</h4>
       <p>
         {% for auth in pub.author %}
           {{ auth.name }};
