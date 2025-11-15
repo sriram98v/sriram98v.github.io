@@ -1,21 +1,91 @@
 {
     "pubs": [
-        {
-            "type": "article",
-            "id": "10.1109/ICITM.2019.871070",
-            "citekey": "10.1109/ICITM.2019.871070",
-            "title": "Deep Online Sequential Extreme Learning Machines and its Application in Pneumonia Detection",
-            "year": "2019",
-            "author": [
-                {
-                    "name": "Vijendran, Sriram"
-                },
-                {
-                    "name": "Dubey, Rahul"
-                }
-            ],
-            "link": "https://ieeexplore.ieee.org/abstract/document/8710700",
-            "booktitle": "2019 8th International Conference on Industrial Technology and Management (ICITM)"
-        }
+  {
+    "title": "Phylo-rs: an extensible phylogenetic analysis library in rust",
+    "author": [
+      {
+        "name": "Sriram Vijendran"
+      },
+      {
+        "name": "Tavis Anderson"
+      },
+      {
+        "name": "Alexey Markin"
+      },
+      {
+        "name": "Oliver Eulenstein"
+      }
+    ],
+    "journal": "BMC bioinformatics",
+    "link": "https://link.springer.com/article/10.1186/s12859-025-06234-w",
+    "volume": "26",
+    "number": "1",
+    "pages": "197",
+    "year": 2025,
+    "publisher": "BioMed Central London"
+  },
+  {
+    "title": "Computing generalized cophenetic distances under all L p norms: A near-linear time algorithmic framework",
+    "author": [
+      {
+        "name": "G\u00f3recki, Pawel"
+      },
+      {
+        "name": "Alexey Markin"
+      },
+      {
+        "name": "Sriram Vijendran"
+      },
+      {
+        "name": "Oliver Eulenstein"
+      }
+    ],
+    "journal": "PLOS Computational Biology",
+    "link": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013069",
+    "volume": "21",
+    "number": "6",
+    "pages": "e1013069",
+    "year": 2025,
+    "publisher": "Public Library of Science San Francisco, CA USA"
+  },
+  {
+    "title": "Bounds on the Treewidth of Level-k Rooted Phylogenetic Networks",
+    "author": [
+      {
+        "name": "Alexey Markin"
+      },
+      {
+        "name": "Sriram Vijendran"
+      },
+      {
+        "name": "Oliver Eulenstein"
+      }
+    ],
+    "journal": "arXiv preprint arXiv:2411.13380",
+    "link": "https://arxiv.org/abs/2411.13380",
+    "year": 2024
+  },
+  {
+    "title": "SmartHisto: Bayesian Active Learning for Histology Images",
+    "author": [
+      {
+        "name": "Sriram Vijendran"
+      },
+      {
+        "name": "Bailey Arruda"
+      },
+      {
+        "name": "Tavis K Anderson"
+      },
+      {
+        "name": "Oliver Eulenstein"
+      }
+    ],
+    "journal": "bioRxiv",
+    "link": "https://www.biorxiv.org/content/10.1101/2025.10.13.681994.abstract",
+    "pages": "2025--10",
+    "year": 2025,
+    "publisher": "Cold Spring Harbor Laboratory"
+  }
     ]
 }
