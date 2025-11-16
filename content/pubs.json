@@ -49,23 +49,6 @@
     "publisher": "Public Library of Science San Francisco, CA USA"
   },
   {
-    "title": "Bounds on the Treewidth of Level-k Rooted Phylogenetic Networks",
-    "author": [
-      {
-        "name": "Alexey Markin"
-      },
-      {
-        "name": "Sriram Vijendran"
-      },
-      {
-        "name": "Oliver Eulenstein"
-      }
-    ],
-    "journal": "arXiv preprint arXiv:2411.13380",
-    "link": "https://arxiv.org/abs/2411.13380",
-    "year": 2024
-  },
-  {
     "title": "SmartHisto: Bayesian Active Learning for Histology Images",
     "author": [
       {

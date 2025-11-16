@@ -1,5 +1,5 @@
 {
-  description = "A flake for developing and building my personal website";
+  description = "A flake for developing and building personal webpages using Zola";
 
   inputs.nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
   inputs.flake-utils.url = "github:numtide/flake-utils";
