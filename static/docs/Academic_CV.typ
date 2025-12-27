@@ -87,7 +87,7 @@
   role: "Phylo-rs",
   dates: dates-helper(start-date: "Aug 2023", end-date: "Present"),
 )
-- Architected Phylo-rs, a Rust-based phylogenetic library outperforming existing Python tools by 100x in speed via memory-safe implementations
+- Architected Phylo-rs, a Rust-based phylogenetic library outperforming existing Python tools by 10x in speed via memory-safe implementations
 - Implemented advanced phylogenetic algorithms (SPR, diversity metrics) with WebAssembly support for cross-platform usage
 - Built an extensible, memory-safe framework now serving as a foundation for safe phylogenetic inference tools
 
@@ -100,6 +100,18 @@
 - Developed an Active Learning framework to train Bayesian neural networks, significantly reducing annotation requirements
 
 // ==========================================
+// SELECTED PUBLICATIONS
+// ==========================================
+== Selected Publications
+
+- *Vijendran, S.*, Anderson, T., Markin, A., & Eulenstein, O. #link("https://doi.org/10.1186/s12859-025-06234-w")["Phylo-rs: an extensible phylogenetic analysis library in rust."] _BMC Bioinformatics_ 26, no. 1 (2025).
+- Nguyen, T.Q., Hutter, C.R., Markin, A., Thomas, M., Lantz, K., Killian, M.L., Janzen, G.M., *Vijendran, S.*, Wagle, S., Inderski, B., et al. #link("https://doi.org/10.1126/science.adq0900")["Emergence and interstate spread of highly pathogenic avian influenza A (H5N1) in dairy cattle in the United States."] _Science_ 388, no. 6745 (2025).
+- Górecki, P., Markin, A., *Vijendran, S.*, & Eulenstein, O. #link("https://doi.org/10.1371/journal.pcbi.1013069")["Computing generalized cophenetic distances under all Lp norms: A near-linear time algorithmic framework."] _PLOS Computational Biology_ 21, no. 6 (2025).
+- *Vijendran, S.*, Arruda, B., Anderson, T.K., & Eulenstein, O. #link("https://www.biorxiv.org/content/10.1101/2025.10.13.681994v1")["SmartHisto: Bayesian Active Learning for Histology Images."] _bioRxiv_ (2025).
+- Markin, A., *Vijendran, S.*, & Eulenstein, O. #link("https://arxiv.org/abs/2411.13380")["Bounds on the Treewidth of Level-k Rooted Phylogenetic Networks."] _arXiv preprint arXiv:2411.13380_ (2024).
+- *Vijendran, S.*, & Dubey, R. #link("https://ieeexplore.ieee.org/document/8710700")["Deep online sequential extreme learning machines and its application in pneumonia detection."] _2019 8th International Conference on Industrial Technology and Management (ICITM)_ (2019).
+
+// ==========================================
 // SKILLS
 // ==========================================
 == Technical Skills
@@ -108,13 +120,4 @@
 - *ML & Data Science*: PyTorch, TensorFlow, Pandas, NumPy, Scikit-learn, Matplotlib
 - *Systems & Tools*: Git, Docker, WASM, Linux, Vim, CI/CD (TravisCI)
 - *Web Frameworks*: Flask, Material-UI, HTML/CSS
-
-// ==========================================
-// CERTIFICATIONS
-// ==========================================
-== Online Certifications
-
-- Deep Learning Specialization (Coursera), Reinforcement Learning (IIT Madras)
-- Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization
-- Structuring Machine Learning Projects, Neural Networks and Deep Learning
 
