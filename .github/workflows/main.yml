@@ -8,6 +8,10 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v3.0.0
+      - name: Typst
+        uses: lvignoli/typst-action@main
+        with:
+          source_file: static/docs/Academic_CV.typ
       - name: build_and_deploy
         uses: shalzz/zola-deploy-action@v0.17.2
         env:
