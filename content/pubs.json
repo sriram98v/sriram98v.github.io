@@ -1,5 +1,27 @@
 {
     "pubs": [
+    {
+    "title": "PREMISE: A Quality-Aware Probabilistic Framework for Pathogen Resolution and Source Assignment in Viral mNGS",
+    "author": [
+      {
+        "name": "Sriram Vijendran"
+      },
+      {
+        "name": "Karin Dorman"
+      },
+      {
+        "name": "Tavis Anderson"
+      },
+      {
+        "name": "Oliver Eulenstein"
+      }
+    ],
+    "journal": "bioRxiv",
+    "link": "https://doi.org/10.64898/2026.03.15.711921",
+    "pages": "2025--10",
+    "year": 2025,
+    "publisher": "Cold Spring Harbor Laboratory"
+  },
   {
     "title": "Phylo-rs: an extensible phylogenetic analysis library in rust",
     "author": [
@@ -24,6 +46,24 @@
     "year": 2025,
     "publisher": "BioMed Central London"
   },
+      {
+    "title": "Bounds on the Treewidth of Level-k Rooted Phylogenetic Networks",
+    "author": [
+      {
+        "name": "Sriram Vijendran"
+      },
+      {
+        "name": "Alexey Markin"
+      },
+      {
+        "name": "Oliver Eulenstein"
+      }
+    ],
+    "journal": "arXiv preprint arXiv:2411.13380",
+    "link": "https://doi.org/10.48550/arXiv.2411.13380",
+    "year": 2024
+  },
+
   {
     "title": "Computing generalized cophenetic distances under all L p norms: A near-linear time algorithmic framework",
     "author": [
