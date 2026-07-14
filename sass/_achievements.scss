@@ -15,18 +15,18 @@
       margin: 0;
     }
     h4 {
-        color: black;
+        color: var(--text-strong);
         margin: 0;
       }
     h5 {
-        color: gray;
+        color: var(--text-muted);
         margin: 0;
       }
     ul{
         margin: 0;
     }
     li {
-      color: $main;
+      color: var(--ink);
       font-size: 1.1rem;
       list-style-type: none;
       text-decoration: none;
@@ -35,11 +35,11 @@
     p {
       margin-right: 5px;
       font-size: 0.75rem;
-      color: gray;
+      color: var(--text-muted);
     }
     a {
       text-decoration: none;
-      color: black;
+      color: var(--text-strong);
       &:hover {
         color: $purple;
         transition: color 0.3s ease-in,

@@ -1,4 +1,45 @@
-$main: #1a222c;
-$sec: #4B5664;
-$purple: #5755d9;
+// Theme tokens. Light values equal the original hardcoded colors so light mode
+// is visually identical to before. Dark = "Dark Botanical" palette.
+:root {
+  --bg:           #ffffff;
+  --bg-elevated:  #1a222c; // hero + footer background
+  --text:         #555;    // body text
+  --text-strong:  #333;    // headings
+  --ink:          #1a222c; // strong foreground on light surfaces (list items, outline buttons)
+  --text-muted:   #586069;
+  --text-faint:   #6a737d;
+  --text-on-hero: #FFF;    // text sitting on --bg-elevated
+  --accent:       #5755d9;
+  --accent-2:     #4B5664;
+  --link:         #0366d6;
+  --border:       #d1d5da;
+  --card-bg:      #fff;
+  --heart:        red;
+  --focus-ring:   rgba(3, 102, 214, 0.3);
+}
+
+:root[data-theme="dark"] {
+  --bg:           #0e0c0b;
+  --bg-elevated:  #16110d;
+  --text:         #f3ece1;
+  --text-strong:  #f3ece1;
+  --ink:          #f3ece1;
+  --text-muted:   #b0a48f;
+  --text-faint:   #7c715f;
+  --text-on-hero: #f3ece1;
+  --accent:       #d8a24a; // gold
+  --accent-2:     #c0663f; // terracotta
+  --link:         #d8a24a;
+  --border:       rgba(243, 236, 225, 0.14);
+  --card-bg:      rgba(243, 236, 225, 0.035);
+  --heart:        #c0663f;
+  --focus-ring:   rgba(216, 162, 74, 0.35);
+}
+
+// SCSS passthroughs so existing $var usages pick up the tokens.
+// NOTE: $main is only used for dark *backgrounds* (hero/footer/icon-hover);
+// $main-as-text usages were replaced with var(--ink) directly.
+$main: var(--bg-elevated);
+$sec: var(--accent-2);
+$purple: var(--accent);
 $cut: 550px;

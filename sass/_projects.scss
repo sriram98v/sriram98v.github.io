@@ -23,7 +23,7 @@
     margin: 0;
   }
   li {
-    color: $main;
+    color: var(--ink);
     font-size: 1.1rem;
   }
   p {
@@ -74,9 +74,9 @@
   display: inline-block;
   margin: 10px 0px;
   padding: 5px;
-  color: $main;
+  color: var(--ink);
   background-color: transparent;
-  border: 1px solid $main;
+  border: 1px solid var(--ink);
   border-radius: 10px;
   text-align: center;
   outline: none;
@@ -88,7 +88,7 @@
   &:hover {
     background-color: $purple;
     border-color: $purple;
-    color: #fff;
+    color: var(--text-on-hero);
     transition: color 0.3s ease-in,
                 background-color 0.3s ease-in,
                 border-color 0.3s ease-in;
@@ -96,9 +96,72 @@
   &:active {
     background-color: $purple;
     border-color: $purple;
-    color: #fff;
+    color: var(--text-on-hero);
     transition: color 0.3s ease-in,
                 background-color 0.3s ease-in,
                 border-color 0.3s ease-in;
   }
+}
+
+.pinned-repos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.repo-card {
+  flex: 1 1 250px;
+  max-width: 320px;
+  height: 120px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--card-bg);
+  overflow: hidden;
+  &:hover {
+    border-color: var(--link);
+    box-shadow: 0 0 8px var(--focus-ring);
+  }
+}
+
+.repo-link {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+  box-sizing: border-box;
+  &:hover {
+    color: inherit;
+  }
+}
+
+.repo-name {
+  margin: 0 0 6px;
+  font-size: 14px;
+  color: var(--link);
+  font-weight: 600;
+}
+
+.repo-lang-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.repo-lang {
+  font-size: 12px;
+  color: var(--text-muted);
+  vertical-align: middle;
+}
+
+.repo-desc {
+  margin: 6px 0 0;
+  font-size: 12px;
+  color: var(--text-faint);
+  line-height: 1.4;
 }

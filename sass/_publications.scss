@@ -10,30 +10,38 @@
   }
   
   .user-pubs {
-    margin: 20px auto;
+    margin: 16px 0;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+    &:last-of-type {
+      border-bottom: none;
+    }
     h3 {
-      margin: 0;
+      margin: 0 0 4px;
+      padding-top: 0;
+      font-size: 1.15rem;
     }
     h4 {
-        color: gray;
+        color: var(--text-muted);
         margin: 0;
+        font-size: 0.9rem;
       }
     h5 {
-        color: black;
+        color: var(--text-strong);
         margin: 0;
       }
     li {
-      color: $main;
+      color: var(--ink);
       font-size: 1.1rem;
     }
     p {
-      margin-right: 5px;
-      font-size: 0.75rem;
-      color: gray;
+      margin: 8px 0 0;
+      font-size: 0.9rem;
+      color: var(--text-faint);
     }
     a {
       text-decoration: none;
-      color: black;
+      color: var(--text-strong);
       &:hover {
         color: $purple;
         transition: color 0.3s ease-in,
@@ -60,9 +68,9 @@
     display: inline-block;
     margin: 10px 0px;
     padding: 5px;
-    color: $main;
+    color: var(--ink);
     background-color: transparent;
-    border: 1px solid $main;
+    border: 1px solid var(--ink);
     border-radius: 10px;
     text-align: center;
     outline: none;
@@ -74,7 +82,7 @@
     &:hover {
       background-color: $purple;
       border-color: $purple;
-      color: #fff;
+      color: var(--text-on-hero);
       transition: color 0.3s ease-in,
                   background-color 0.3s ease-in,
                   border-color 0.3s ease-in;
