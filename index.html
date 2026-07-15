@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script>
+    // Apply theme before first paint (no FOUC). localStorage overrides OS preference.
+    (function() {
+      var t = localStorage.getItem('theme');
+      if (!t) { t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+      if (t === 'dark') { document.documentElement.setAttribute('data-theme', 'dark'); }
+    })();
+  </script>
+
+  <title>Sriram Vijendran</title>
+  <meta name="description" content="Personal webpage for Sriram Vijendran">
+
+  <link rel="stylesheet" href="https://sriram98v.github.io/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <script src="https://kit.fontawesome.com/5ad2c9e127.js" crossorigin="anonymous"></script>
+  <script>
+  (function() {
+    var PINNED = [
+      {"name":"webgpu-fmidx","description":"","language":"Rust","stars":0,"forks":0},
+      {"name":"phylo-rs","description":"A Rust-based library for phylogenetic analysis and manipulation","language":"Rust","stars":17,"forks":0},
+      {"name":"phylo-pyrs","description":"","language":"Rust","stars":0,"forks":0},
+      {"name":"premise","description":"PREMISE: A probabilistic framework for source assignment of Illumina reads","language":"Rust","stars":1,"forks":0},
+      {"name":"generalized_suffix_tree","description":"Rust library for truncated suffix trees","language":"Rust","stars":1,"forks":0},
+      {"name":"near-linear-cophenetic-distance","description":"Calculating generalized Cophenetic Distances in near-linear time under any Lp norm.","language":"Rust","stars":1,"forks":0}
+    ];
+    function render() {
+      var c = document.getElementById('pinned-repos');
+      if (!c) return;
+      for (var i = 0; i < PINNED.length; i++) {
+        var r = PINNED[i];
+        var card = document.createElement('div');
+        card.className = 'repo-card';
+        var color = '';
+        if (r.language === 'Rust') color = '#dea584';
+        else if (r.language === 'HTML') color = '#e34c26';
+        var dot = r.language ? '<span class="repo-lang-dot" style="background:' + color + '"></span>' : '';
+        var lang = r.language ? '<span class="repo-lang">' + r.language + '</span>' : '';
+        var desc = r.description ? '<p class="repo-desc">' + r.description + '</p>' : '';
+        card.innerHTML = '<a class="repo-link" href="https://github.com/sriram98v/' + r.name + '" target="_blank" rel="noopener">' +
+          '<h3 class="repo-name">' + r.name + '</h3>' + dot + lang + desc + '</a>';
+        c.appendChild(card);
+      }
+    }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', render);
+    else render();
+  })();
+  </script>
+</head>
+
+
+  <body>
+
+      
+<button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+  <i class="icon fa fa-moon" aria-hidden="true"></i>
+</button>
+<button id="scroll-top" class="scroll-top" aria-label="Scroll to top">
+  <i class="icon fa fa-chevron-up" aria-hidden="true"></i>
+</button>
+<div id="particles-js">
+  <div class="header">
+      <h1>
+        <span class="site-title">Sriram Vijendran</span>
+        <span class="site-description">Researcher</span>
+      </h1>
+      <div class="header-icons">
+        <a aria-label="Send email" href="mailto:vijendran.sriram@gmail.com"><i class="icon fa fa-envelope"></i></a>
+        <a aria-label="My Github" href="https://github.com/sriram98v"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+        <a aria-label="My Linkedin" href="https://www.linkedin.com/in/sriram-vijendran-02595512a"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
+        <a aria-label="My Google Scholar" href="https://scholar.google.com/citations?user=Ph3THgYAAAAJ&hl=en"><i class="icon fa fa-google" aria-hidden="true"></i></a>
+        <a aria-label="My CV" href="https://sriram98v.github.io/docs/Academic_CV.pdf"><i class="icon fa-solid fa-file"></i></a>
+      </div>
+      <div class="header-links">
+        <a class="link" href="#about" data-scroll>About Me</a>
+        <a class="link" href="#skills" data-scroll>Skills</a>
+        <a class="link" href="#exp" data-scroll>Experience</a>
+        <a class="link" href="#achievements" data-scroll>Achievements</a>
+        <a class="link" href="#publications" data-scroll>Publications</a>
+        <a class="link" href="#projects" data-scroll>Projects</a>
+      </div>
+  </div>
+  <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+</div>
+
+
+      <section id="about">
+        
+<div class="user-details">
+  <h1> About me </h1>
+  <p> A Machine Learning enthusiast with a background in Electronics and Communication Engineering. Looking to explore the Application of Machine Learning in Genomic Analysis and String data, applications of Gaussian Processes in image data. Currently a Ph.D. student at Iowa State University. </p>
+</div>
+
+      </section>
+
+      <section id="publications">
+        
+<div class="user-details">
+  <h1> Recent Publications </h1>
+</div>
+
+
+  <div class="user-pubs">
+    <div class="pub-contents">
+      <h3><i class="fa-solid fa-book"></i> <a href="https:&#x2F;&#x2F;doi.org&#x2F;10.64898&#x2F;2026.03.15.711921">PREMISE: A Quality-Aware Probabilistic Framework for Pathogen Resolution and Source Assignment in Viral mNGS</a></h3>
+      <h4>bioRxiv - 2025</h4>
+      <p>Sriram Vijendran; Karin Dorman; Tavis Anderson; Oliver Eulenstein</p>
+    </div>
+  </div>
+
+  <div class="user-pubs">
+    <div class="pub-contents">
+      <h3><i class="fa-solid fa-book"></i> <a href="https:&#x2F;&#x2F;link.springer.com&#x2F;article&#x2F;10.1186&#x2F;s12859-025-06234-w">Phylo-rs: an extensible phylogenetic analysis library in rust</a></h3>
+      <h4>BMC bioinformatics - 2025</h4>
+      <p>Sriram Vijendran; Tavis Anderson; Alexey Markin; Oliver Eulenstein</p>
+    </div>
+  </div>
+
+  <div class="user-pubs">
+    <div class="pub-contents">
+      <h3><i class="fa-solid fa-book"></i> <a href="https:&#x2F;&#x2F;doi.org&#x2F;10.48550&#x2F;arXiv.2411.13380">Bounds on the Treewidth of Level-k Rooted Phylogenetic Networks</a></h3>
+      <h4>arXiv preprint arXiv:2411.13380 - 2024</h4>
+      <p>Sriram Vijendran; Alexey Markin; Oliver Eulenstein</p>
+    </div>
+  </div>
+
+  <div class="user-pubs">
+    <div class="pub-contents">
+      <h3><i class="fa-solid fa-book"></i> <a href="https:&#x2F;&#x2F;journals.plos.org&#x2F;ploscompbiol&#x2F;article?id=10.1371&#x2F;journal.pcbi.1013069">Computing generalized cophenetic distances under all L p norms: A near-linear time algorithmic framework</a></h3>
+      <h4>PLOS Computational Biology - 2025</h4>
+      <p>Górecki, Pawel; Alexey Markin; Sriram Vijendran; Oliver Eulenstein</p>
+    </div>
+  </div>
+
+  <div class="user-pubs">
+    <div class="pub-contents">
+      <h3><i class="fa-solid fa-book"></i> <a href="https:&#x2F;&#x2F;www.biorxiv.org&#x2F;content&#x2F;10.1101&#x2F;2025.10.13.681994.abstract">SmartHisto: Bayesian Active Learning for Histology Images</a></h3>
+      <h4>bioRxiv - 2025</h4>
+      <p>Sriram Vijendran; Bailey Arruda; Tavis K Anderson; Oliver Eulenstein</p>
+    </div>
+  </div>
+
+<a class="pub-link" href="https://scholar.google.com/citations?hl=en&user=Ph3THgYAAAAJ">All Publications</a>
+
+      </section>
+
+      <section id="projects">
+        
+<div class="user-details">
+  <h1> Projects </h1>
+</div>
+<div id="pinned-repos" class="pinned-repos-grid"></div>
+<a class="project-link" href="https://github.com/sriram98v">All Projects</a>
+
+      </section>
+
+      <section id="skills">
+        
+<div class="user-details">
+  <h1> Skills </h1>
+</div>
+<div class="user">
+  <div class="tech">
+    <h2>Tools/Languages</h2>
+    <i class="devicon-git-plain"></i>
+    <i class="devicon-python-plain"></i>
+    <i class="devicon-rust-plain"></i>
+    <i class="devicon-matlab-plain"></i>
+    <i class="devicon-tensorflow-original"></i>
+    <i class="devicon-pytorch-original"></i>
+    <i class="devicon-latex-original"></i>
+    <i class="devicon-linux-plain"></i>
+  </div>
+  <div class="tech">
+    <h2>Certifications</h2>
+    <ul>
+      
+      
+        <li><i class="fa-solid fa-link"></i> <a href="https:&#x2F;&#x2F;www.coursera.org&#x2F;account&#x2F;accomplishments&#x2F;records&#x2F;LTVXL8Y3G7RT">Introduction to Programming with MATLAB</a></li>
+      
+        <li><i class="fa-solid fa-link"></i> <a href="https:&#x2F;&#x2F;www.coursera.org&#x2F;account&#x2F;accomplishments&#x2F;records&#x2F;E4H7VXATC3SA">Structuring Machine Learning Projects</a></li>
+      
+        <li><i class="fa-solid fa-link"></i> <a href="https:&#x2F;&#x2F;www.coursera.org&#x2F;account&#x2F;accomplishments&#x2F;records&#x2F;DMUFMW4DZW9N">Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization</a></li>
+      
+        <li><i class="fa-solid fa-link"></i> <a href="https:&#x2F;&#x2F;www.coursera.org&#x2F;account&#x2F;accomplishments&#x2F;records&#x2F;BY27A2RWRLNZ">Neural Networks and Deep Learning</a></li>
+      
+        <li><i class="fa-solid fa-link"></i> <a href="https:&#x2F;&#x2F;www.coursera.org&#x2F;account&#x2F;accomplishments&#x2F;records&#x2F;EH9QETENF58K">Using Python to Access</a></li>
+      
+        <li><i class="fa-solid fa-link"></i> <a href="https:&#x2F;&#x2F;www.coursera.org&#x2F;account&#x2F;accomplishments&#x2F;records&#x2F;UNJ36FZHLLLW">Python Data Structures</a></li>
+      
+        <li><i class="fa-solid fa-link"></i> <a href="https:&#x2F;&#x2F;www.coursera.org&#x2F;account&#x2F;accomplishments&#x2F;records&#x2F;PFS6NZ8RM8J5">Programming for Everybody (Getting Started with Python)</a></li>
+      
+        <li><i class="fa-solid fa-link"></i> <a href="docs&#x2F;NUS.pdf">NUS Certificate</a></li>
+      
+        <li><i class="fa-solid fa-link"></i> <a href="docs&#x2F;RL.pdf">Reinforcement Learning</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+      </section>
+
+      <section id="exp">
+        
+<div class="user-details">
+  <h1> Experience </h1>
+</div>
+<div class="user">
+  <div class="tech">
+    
+    <h2>Work Experience</h2>
+    <ul>
+    
+    <li>
+      <h5><i class="fa-solid fa-link"></i> <a href="https:&#x2F;&#x2F;www.ars.usda.gov&#x2F;midwest-area&#x2F;ames&#x2F;nadc&#x2F;">ORISE-USDA-ARS</a></h5>
+      <h6>Research Intern, August 2023 - August 2024</h6>
+    </li>
+    
+    <li>
+      <h5><i class="fa-solid fa-link"></i> <a href="https:&#x2F;&#x2F;rbcdsai.iitm.ac.in&#x2F;">Robert Bosch Center for Data Science and Artificial Intelligence</a></h5>
+      <h6>Research Intern, December 2018 - June 2020</h6>
+    </li>
+    
+    <li>
+      <h5><i class="fa-solid fa-link"></i> <a href="https:&#x2F;&#x2F;www.ambertag.com&#x2F;">AmberTAG</a></h5>
+      <h6>Consultant, May 2020 - November 2020</h6>
+    </li>
+    
+    <li>
+      <h5><i class="fa-solid fa-link"></i> <a href="https:&#x2F;&#x2F;www.ambertag.com&#x2F;">AmberTag Analytics</a></h5>
+      <h6>ML Engineer, September 2018 - December 2018</h6>
+    </li>
+    
+    <li>
+      <h5><i class="fa-solid fa-link"></i> <a href="https:&#x2F;&#x2F;tapankgandhi.com&#x2F;research&#x2F;">IIT, Delhi</a></h5>
+      <h6>Research Intern, August 2018</h6>
+    </li>
+    
+    <li>
+      <h5><i class="fa-solid fa-link"></i> <a href="https:&#x2F;&#x2F;www.comp.nus.edu.sg&#x2F;">National University of Singapore</a></h5>
+      <h6>Research Intern, June 2018</h6>
+    </li>
+    
+    </ul>
+  </div>
+  <div class="tech">
+    <h2>Affiliations</h2>
+    <ul>
+    
+    <li>
+      <h5><i class="fa-solid fa-link"></i> <a href="https:&#x2F;&#x2F;compbioteam.github.io&#x2F;">Computational Biology Research Team @ Iowa State University</a></h5>
+      <h6>Ph.D. Student</h6>
+    </li>
+    
+    <li>
+      <h5><i class="fa-solid fa-link"></i> <a href="https:&#x2F;&#x2F;anderson-lab.com&#x2F;people&#x2F;">FluCrew</a></h5>
+      <h6>Researcher</h6>
+    </li>
+    
+    <li>
+      <h5><i class="fa-solid fa-link"></i> <a href="https:&#x2F;&#x2F;cos.io&#x2F;">Center of Science</a></h5>
+      <h6>Ambassador</h6>
+    </li>
+    
+    <li>
+      <h5><i class="fa-solid fa-link"></i> <a href="https:&#x2F;&#x2F;srmap.edu.in&#x2F;next_tech_lab&#x2F;">Next Tech Labs</a></h5>
+      <h6>Syndicate of Minsky Labs</h6>
+    </li>
+    
+    </ul>
+  </div>
+</div>
+
+      </section>
+
+      <section id="achievements">
+        
+<div class="user-details">
+  <h1> Achievements </h1>
+</div>
+<div class="user">
+    <div class="tech">
+      <h2>Awards</h2>
+        <ul>
+          
+          
+            <li>
+              <h4>Research Day</h4>
+              <h5>SRMIST | 2019 | Silver Medal</h5>
+            </li>
+          
+            <li>
+              <h4>Interdepartment Physics Project Competition</h4>
+              <h5>SRMIST | 2016 | First Place</h5>
+            </li>
+          
+            <li>
+              <h4>Robotics Competition</h4>
+              <h5>Robotryst | 2014 | Third Place</h5>
+            </li>
+          
+        </ul>
+    </div>
+    <div class="tech">
+      <h2>Fellowships</h2>
+        <ul>
+          
+            <li>
+              <h4><i class="fa-solid fa-link"></i> <a href="https:&#x2F;&#x2F;www.zintellect.com&#x2F;Opportunity&#x2F;Details&#x2F;USDA-ARS-MW-2023-0194">USDA-ARS Fellowship in Influenza A Virus in Swine Phylogenetics</a></h4>
+              <h5>Oak Ridge Institute for Science and Education | 2023</h5>
+            </li>
+          
+            <li>
+              <h4><i class="fa-solid fa-link"></i> <a href="https:&#x2F;&#x2F;imageomics.osu.edu&#x2F;image-datapalooza-2023">Datapalooza</a></h4>
+              <h5>Imageomics | 2023</h5>
+            </li>
+          
+            <li>
+              <h4><i class="fa-solid fa-link"></i> <a href="https:&#x2F;&#x2F;www.cos.io&#x2F;blog&#x2F;fellowship-factor-cultivating-community-in-influenza-research-and-beyond">Open Science Fellowship</a></h4>
+              <h5>COS | 2022</h5>
+            </li>
+          
+        </ul>
+    </div>
+</div>
+
+      </section>
+
+      
+<footer class="footer">
+    <p>&copy; Sriram Vijendran</p>
+</footer>
+<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://sriram98v.github.io/js/sweet-scroll.min.js"></script>
+<script src="https://sriram98v.github.io/js/main.js"></script>
+<script src="https://sriram98v.github.io/js/theme.js"></script>
+<script src="https://sriram98v.github.io/js/scroll-top.js"></script>
+
+
+  </body>
