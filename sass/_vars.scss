@@ -16,6 +16,14 @@
   --card-bg:      #fff;
   --heart:        red;
   --focus-ring:   rgba(3, 102, 214, 0.3);
+
+  // Glow is a dark-mode-only affordance; `none` keeps light mode untouched.
+  --glow-heading:    none;
+  --glow-hero:       none;
+  --glow-btn:        none;
+  --glow-btn-hover:  none;
+  --glow-card:       none;
+  --glow-card-hover: 0 0 8px var(--focus-ring); // pre-existing light-mode card hover
 }
 
 :root[data-theme="dark"] {
@@ -34,6 +42,14 @@
   --card-bg:      rgba(243, 236, 225, 0.035);
   --heart:        #c0663f;
   --focus-ring:   rgba(216, 162, 74, 0.35);
+
+  // Wide radius + low alpha reads as a halo without smearing glyph edges.
+  --glow-heading:    0 0 22px rgba(216, 162, 74, 0.18);
+  --glow-hero:       0 0 30px rgba(216, 162, 74, 0.30);
+  --glow-btn:        0 0 10px rgba(216, 162, 74, 0.10);
+  --glow-btn-hover:  0 0 16px rgba(216, 162, 74, 0.45);
+  --glow-card:       0 0 12px rgba(216, 162, 74, 0.07);
+  --glow-card-hover: 0 0 20px rgba(216, 162, 74, 0.30);
 }
 
 // SCSS passthroughs so existing $var usages pick up the tokens.

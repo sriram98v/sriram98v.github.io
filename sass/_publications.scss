@@ -72,19 +72,23 @@
     background-color: transparent;
     border: 1px solid var(--ink);
     border-radius: 10px;
+    box-shadow: var(--glow-btn);
     text-align: center;
     outline: none;
     text-decoration: none;
     cursor: pointer;
     transition: color 0.3s ease-out,
                 background-color 0.3s ease-out,
-                border-color 0.3s ease-out;
+                border-color 0.3s ease-out,
+                box-shadow 0.3s ease-out;
     &:hover {
       background-color: $purple;
       border-color: $purple;
       color: var(--text-on-hero);
+      box-shadow: var(--glow-btn-hover);
       transition: color 0.3s ease-in,
                   background-color 0.3s ease-in,
-                  border-color 0.3s ease-in;
+                  border-color 0.3s ease-in,
+                  box-shadow 0.3s ease-in;
     }
   }

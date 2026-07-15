@@ -28,6 +28,7 @@
     display: block;
     line-height: 1;
     color: var(--text-on-hero);
+    text-shadow: var(--glow-hero);
     @media only screen and (min-width:$cut){
       margin: 0;
       font-size: 100px;
@@ -38,6 +39,7 @@
     display: block;
     line-height: 1;
     color: var(--text-on-hero);
+    text-shadow: var(--glow-heading);
     margin-top: 10px;
     @media only screen and (min-width:$cut){
       font-size: 40px;
@@ -52,6 +54,7 @@
     text-decoration: none;
     font-size: 15px;
     margin: 10px;
+    text-shadow: var(--glow-heading);
     @media only screen and (min-width:$cut){
       font-size: 20px;
     }
@@ -72,14 +75,17 @@
     margin: 5px;
     border-radius: 50%;
     border: 2px solid var(--text-on-hero);
+    box-shadow: var(--glow-btn);
     transition: all .7s;
     &:hover {
       color: $main;
       background: var(--text-on-hero);
+      box-shadow: var(--glow-btn-hover);
     }
     &:active {
       color: $main;
       background: var(--text-on-hero);
+      box-shadow: var(--glow-btn-hover);
     }
     @media only screen and (min-width:$cut) {
       width: 35px;
