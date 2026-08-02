@@ -1,6 +1,8 @@
 # On every push this script is executed
 on: push
 name: Build and deploy GH Pages
+permissions:
+  contents: write
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,9 +15,7 @@ jobs:
         with:
           source_file: static/docs/Academic_CV.typ
       - name: build_and_deploy
-        uses: shalzz/zola-deploy-action@v0.17.2
+        uses: shalzz/zola-deploy-action@v0.21.0
         env:
-          # Target branch
           PAGES_BRANCH: gh-pages
-          # Provide personal access token
           TOKEN: ${{ secrets.GITHUB_TOKEN }}

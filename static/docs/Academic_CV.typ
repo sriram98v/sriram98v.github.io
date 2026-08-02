@@ -85,7 +85,7 @@
 
 #project(
   name: "Rust, WASM",
-  role: "Phylo-rs",
+  role: link("https://github.com/sriram98v/phylo-rs")[Phylo-rs],
   dates: dates-helper(start-date: "Aug 2023", end-date: "Present"),
 )
 - Architected Phylo-rs, a Rust-based phylogenetic library outperforming existing Python tools by 10x in speed via memory-safe implementations
@@ -94,7 +94,7 @@
 
 #project(
   name: "Rust, GPU, WebGPU",
-  role: "PREMISE",
+  role: link("https://github.com/sriram98v/premise")[PREMISE],
   dates: dates-helper(start-date: "Jan 2026", end-date: "Present"),
 )
 - Engineered premise, an EM-based metagenomic classifier for paired-end Illumina reads with browser-based GUI
@@ -104,7 +104,7 @@
 
 #project(
   name: "Rust, WebGPU",
-  role: "webgpu-fmidx",
+  role: link("https://sriram98v.github.io/haystackfm/")[haystackfm],
   dates: dates-helper(start-date: "Feb 2026", end-date: "Present"),
 )
 - Built GPU-accelerated FM-index construction for DNA sequences using compute shaders in WGSL
@@ -113,8 +113,18 @@
 - Targeted both native (Vulkan/Metal/DX12) and WebAssembly deployments via wasm-pack
 
 #project(
+  name: "Python, Causal Inference",
+  role: link("https://sriram98v.github.io/claude-science-hackathon/")[Antigenic Distance Modeling],
+  dates: "Jul 2026",
+)
+- Built a reproducible executable-paper notebook separating causal HA escape drivers from linked hitchhikers across three hemagglutination-inhibition datasets
+- Applied PC/GES/FCI causal discovery with bootstrap stability and d-separation validation to distinguish drivers from linkage artifacts
+- Predicted antigenic distance with an interpretable B-spline Kolmogorov-Arnold Network, extended to a second-order variant capturing pairwise epistasis
+- Created as an entry in the Built with Claude: Life Sciences hackathon
+
+#project(
   name: "Python, Computer Vision, PyTorch",
-  role: "SmartHisto",
+  role: link("https://github.com/sriram98v/histology_segmentation")[SmartHisto],
   dates: dates-helper(start-date: "Aug 2021", end-date: "Dec 2023"),
 )
 - Engineered a high-throughput pipeline processing terabyte-scale whole-slide images, optimizing I/O bottlenecks for rapid training

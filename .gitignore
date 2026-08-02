@@ -1,1 +1,5 @@
 public/
+
+# Generated from Academic_CV.typ by CI on every deploy; compile locally with
+# `typst compile static/docs/Academic_CV.typ` if you need it in a local build.
+static/docs/Academic_CV.pdf
